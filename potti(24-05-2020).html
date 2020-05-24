@@ -13,7 +13,14 @@
         }
       p{
         text-align:center;
+
       }
+#id1
+{
+  visibility: hidden;
+  position: absolute;
+}
+
 
       pre
       {
@@ -23,15 +30,25 @@
       {
         background:white;
         background-position:center;
+
       }
-      html
-      {
-        html:100%;
-      }
+
       </style>
+
   </head>
   <body>
-<p>
+    <form id="id2" style="text-align:center;margin:center;position:absolute;width:100%;" onsubmit="return fun1()" action="#id1">
+
+    <input type="password" name="pass"  value="" pattern="14" title="No of days gap between you and me" autofocus>
+    <input  type="submit" name="submit" value="login">
+    <h1 atyle="text-align:center">hint: No of days difference between you and me</h1>
+
+    </form>
+
+
+
+    <div id="id1">
+<p class="class1">
     <marquee height=30 direction="right"  style="margin-left:10%; margin-right:10%" >
 <font size=5 face=verdana>
       Oh my pottiii</marquee>
@@ -44,7 +61,7 @@
     </marquee>
 </p>
 
-<pre style="background:white;color:black;" wrap >
+<pre  style="background:white;color:black;" wrap >
   Ni problem ento naku ardhamkavatla...       Aeppudu happy ga vunde nuvvu...    Wt happened to you...        Nvu ila dull ga vunte tittalenu ninnu...    I can't see u worried/crying 😢....         Actual ga ninnu chala miss avuta...    Nenu chaduvukunta adi idi anukuntaru kani...    Aekkuva sepu chadavanu...   Thinks of u...   Ade nvu vunte...   I can happily focus on other things...     Adi vere vishayam lee  na problems evo nenu padata..   Iam not feeling well...    5 days nunchi chadavatla..  Can't focus...
 
   Nenu actual ga matladanu ani cheppa ga nithoo...  Kani... When the test cases are passed...      Even nenu nitho matladakapoyinaa...  Share cheskovalanipinchindi..   Mail chesevadini.. Ila jerigindi ani..  But nve msg chesav..    2nd di inka taruvata baga try chesa... Last 2 asalu avvala.. Inka quit chesi... Niku msg chesa...  Kani nvu 3 ki vachaka kuda...  Niku telisi kuda reply ivvaledhu...   Istav le ani...  Ala wifi on chesi petta afn nunchi... But not happening...   Adi 8 to 20lakhs job ani nenu happy ga chepdham ani anukolaa..    Daniki asalu 1year experience mandatory..    But ae level lo vunnayo chudham ani rasa...     Aah level danilo nenu successful ga code chesa ani happy ga feel ayya... Share chesukundam anukunna...
@@ -86,5 +103,20 @@
   Happy ga vundu..  Emaina problem vachina...  Badha vachina naku cheppu...  I will let it go away from u..    I will be with u ever...   Love u soo much raa potti 😭...  Jagratha...    Love u love u love u 😘 😘 😘 😘 😘 😘.....    Happy ga vundali...    Jagratha bangaram ❤️.
 
 </pre>
+
+</div>
+
+
+
+<script>
+function fun1()
+{
+
+document.getElementById("id2").style.visibility="hidden";
+document.getElementById("id1").style.visibility="visible";
+return false;
+}
+
+</script>
   </body>
 </html>
